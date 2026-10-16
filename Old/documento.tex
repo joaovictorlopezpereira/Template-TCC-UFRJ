@@ -1,4 +1,4 @@
-\documentclass[        
+\documentclass[
     a4paper,          % Tamanho da folha A4
     12pt,             % Tamanho da fonte 12pt
     chapter=TITLE,    % Todos os capitulos devem ter caixa alta
@@ -18,8 +18,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                     ATENCAO                     %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  Qual e o nivel do trabalho academico que voce esta 
-% escrevendo? Retire o simbolo "%" apenas de um dos 
+%  Qual e o nivel do trabalho academico que voce esta
+% escrevendo? Retire o simbolo "%" apenas de um dos
 % quatro topicos abaixo refente ao nível do seu traba
 % -lho.
 
@@ -38,7 +38,7 @@
 % Remove as bordas vermelhas e verdes do PDF gerado
 % Coloque 'sim' pare remover
 
-\removerbordasdohyperlink{sim} 
+\removerbordasdohyperlink{sim}
 
 % Adiciona a cor Azul a todos os hyperlinks
 
@@ -61,7 +61,7 @@
 \habilitacao{bacharel} % Ou licenciado(a)
 
 % AVISO: Caso necessario alterar o texto de apresenta-
-% cao da Especializacao, ir a pasta "lib", arquivo 
+% cao da Especializacao, ir a pasta "lib", arquivo
 % "ufctex.sty" na linha 502.
 
 
@@ -72,7 +72,7 @@
 \especializacaoem{Yyyyyyyyy}
 
 % AVISO: Caso necessario alterar o texto de apresenta-
-% cao da Especializacao, ir a pasta "lib", arquivo 
+% cao da Especializacao, ir a pasta "lib", arquivo
 % "ufctex.sty" na linha 507.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,7 +85,7 @@
 \areadeconcentracaomestrado{Engenharia Xxxxxx}
 
 % AVISO: Caso necessario alterar o texto de apresenta-
-% cao da dissertacao, ir a pasta "lib", arquivo 
+% cao da dissertacao, ir a pasta "lib", arquivo
 % "ufctex.sty" na linha 511.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,7 +98,7 @@
 \areadeconcentracaodoutorado{Engenharia Xxxxxxx}
 
 % AVISO: Caso necessario alterar o texto de apresenta-
-% cao da tese, ir a pasta "lib", arquivo "ufctex.sty" 
+% cao da tese, ir a pasta "lib", arquivo "ufctex.sty"
 % na linha 515.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -160,7 +160,7 @@
 \membrodabancaseiscentro{}
 \membrodabancaseisies{Universidade do Membro da Banca Seis (SIGLA)}
 
-\begin{document}	
+\begin{document}
 
 	% Elementos pré-textuais
 	\imprimircapa
@@ -180,11 +180,11 @@
 	%\imprimirlistadealgoritmos
 	%\imprimirlistadecodigosfonte
 	\imprimirlistadeabreviaturasesiglas
-	\imprimirlistadesimbolos{1-pre-textuais/lista-de-simbolos}   
+	\imprimirlistadesimbolos{1-pre-textuais/lista-de-simbolos}
 	\imprimirsumario
-	
+
 	\setcounter{table}{0}% Deixe este comando antes da primeira tabela.
-	
+
 	%Elementos textuais
 	\textual
 	\input{2-textuais/1-introducao}
@@ -192,10 +192,10 @@
 	\input{2-textuais/3-metodologia}
 	\input{2-textuais/4-resultados}
 	\input{2-textuais/5-conclusao}
-	
-	%Elementos pós-textuais	
+
+	%Elementos pós-textuais
 	\bibliography{3-pos-textuais/referencias}
-%	\imprimirglossario	
+%	\imprimirglossario
 	\imprimirapendices
 		% Adicione aqui os apendices do seu trabalho
 		\input{3-pos-textuais/apendices/apendice-a}
@@ -205,7 +205,7 @@
 	\imprimiranexos
 		% Adicione aqui os anexos do seu trabalho
 		\input{3-pos-textuais/anexos/anexo-a}
-		\input{3-pos-textuais/anexos/anexo-b}		
+		\input{3-pos-textuais/anexos/anexo-b}
 	\imprimirindice
 
 \end{document}
