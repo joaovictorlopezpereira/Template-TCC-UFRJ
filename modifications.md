@@ -12,3 +12,4 @@ Modifications applied to the TCC template available at the [UFRJ Instute of Comp
 - Fix indentation and spacing in all `.tex` files
 - Fix positioning of the dedication
 - Fix margin overflow caused by citation macro
+- Fix margin overflow in Appendix B TOC entry
