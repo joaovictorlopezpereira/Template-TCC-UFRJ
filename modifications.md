@@ -8,6 +8,10 @@ Modifications applied to the TCC template available at [https://ic.ufrj.br/info/
   - referencias.bib
   - glossario.tex
   - linguagens.tex
+  - anexo-1.tex
+  - anexo-2.tex
+  - apendice-1.tex
+  - apendice-2.tex
 
 - Fix indentation in
   - formatacao.tex
