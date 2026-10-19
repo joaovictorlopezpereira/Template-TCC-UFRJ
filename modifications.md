@@ -7,6 +7,7 @@ Modifications applied to the TCC template available at [https://ic.ufrj.br/info/
 - Fix indentation and spacing in
   - referencias.bib
   - glossario.tex
+  - linguagens.tex
 
 - Fix indentation in
   - formatacao.tex
