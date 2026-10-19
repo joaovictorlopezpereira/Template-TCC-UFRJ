@@ -4,6 +4,7 @@ Modifications applied to the TCC template available at [https://ic.ufrj.br/info/
 - Remove empty spaces
 - Remove old "main" tex files that aren't part of the current template
 - Rename file "url16023.sty" to "url6023.sty" and change some import commands
+- Remove unused images
 - Fix quotes (ASCII quotes were being used instead of UTF-8 default ones)
 - Remove some lines of code that do nothing
 - Fix indentation and spacing in
