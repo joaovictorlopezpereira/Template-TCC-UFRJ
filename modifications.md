@@ -1,35 +1,12 @@
 
-Modifications applied to the TCC template available at [https://ic.ufrj.br/info/tcc-bcc/](https://ic.ufrj.br/info/tcc-bcc/), accessed on October 16, 2026.
+Modifications applied to the TCC template available at the [UFRJ Instute of Computing Website](https://ic.ufrj.br/info/tcc-bcc/), accessed on October 16, 2026.
 
 - Remove empty spaces
-- Remove old "main" tex files that aren't part of the current template
-- Rename file "url16023.sty" to "url6023.sty" and change some import commands
+- Remove unused `.tex` files
 - Remove unused images
+- Fix package name mismatch in [`url6023.sty`](src/url6023.sty) file
 - Fix quotes (ASCII quotes were being used instead of UTF-8 default ones)
 - Remove some lines of code that do nothing
-- Fix indentation and spacing in
-  - referencias.bib
-  - glossario.tex
-  - linguagens.tex
-  - anexo-1.tex
-  - anexo-2.tex
-  - apendice-1.tex
-  - apendice-2.tex
-  - abreviaturas.tex
-  - abstract.tex
-  - agradecimentos.tex
-  - dedicatoria.tex
-  - epigrafe.tex
-  - folhadeaprovacao.tex
-  - personalizar.tex
-  - simbolos.tex
-  - resumo.tex
-  - capitulo-1.tex
-  - capitulo-2.tex
-  - capitulo-3.tex
-  - capitulo-4.tex
-  - capitulo-5.tex
-
-- Fix indentation in
-  - formatacao.tex
+- Fix Overfull errors from unecessary linebreaks
+- Fix indentation and spacing in all `.tex` files
 - Fix positioning of the dedication
