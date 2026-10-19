@@ -6,3 +6,4 @@ Modifications applied to the TCC template available at [https://ic.ufrj.br/info/
 - Rename file "url16023.sty" to "url6023.sty" and change some import commands
 - Fix indentation and spacing in
   - referencias.bib
+  - glossario.tex
