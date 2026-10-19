@@ -4,6 +4,8 @@ Modifications applied to the TCC template available at [https://ic.ufrj.br/info/
 - Remove empty spaces
 - Remove old "main" tex files that aren't part of the current template
 - Rename file "url16023.sty" to "url6023.sty" and change some import commands
+- Fix quotes (ASCII quotes were being used instead of UTF-8 default ones)
+- Remove some lines of code that do nothing
 - Fix indentation and spacing in
   - referencias.bib
   - glossario.tex
@@ -12,8 +14,15 @@ Modifications applied to the TCC template available at [https://ic.ufrj.br/info/
   - anexo-2.tex
   - apendice-1.tex
   - apendice-2.tex
+  - abreviaturas.tex
+  - abstract.tex
+  - agradecimentos.tex
+  - dedicatoria.tex
+  - epigrafe.tex
+  - folhadeaprovacao.tex
+  - personalizar.tex
+  - simbolos.tex
+  - resumo.tex
 
 - Fix indentation in
   - formatacao.tex
-
-- Remove some lines of code that do nothing
