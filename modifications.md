@@ -31,3 +31,4 @@ Modifications applied to the TCC template available at [https://ic.ufrj.br/info/
 
 - Fix indentation in
   - formatacao.tex
+- Fix positioning of the dedication
