@@ -23,6 +23,11 @@ Modifications applied to the TCC template available at [https://ic.ufrj.br/info/
   - personalizar.tex
   - simbolos.tex
   - resumo.tex
+  - capitulo-1.tex
+  - capitulo-2.tex
+  - capitulo-3.tex
+  - capitulo-4.tex
+  - capitulo-5.tex
 
 - Fix indentation in
   - formatacao.tex
