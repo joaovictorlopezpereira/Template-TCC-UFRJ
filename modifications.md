@@ -7,3 +7,8 @@ Modifications applied to the TCC template available at [https://ic.ufrj.br/info/
 - Fix indentation and spacing in
   - referencias.bib
   - glossario.tex
+
+- Fix indentation in
+  - formatacao.tex
+
+- Remove some lines of code that do nothing

@@ -51,9 +51,9 @@
 \usepackage[alf, abnt-emphasize=bf]{abntex2cite}
 % Margens definidas em 25 mm para uso como documento em PDF
 % Para imprimir use as seguintes margens:
-% \usepackage[left=30mm, top=30mm, right=20 mm, bottom=20mm] {geometry}
+% \usepackage[left=30mm, top=30mm, right=20mm, bottom=20mm] {geometry}
 
-\usepackage[margin=25 mm]{geometry}
+\usepackage[margin=25mm]{geometry}
 %---
 % O arquivo com o nome dos alunos e dos orientadores é lido aqui.
 % Atualizar diretamente no arquivo
@@ -74,9 +74,7 @@
 \renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
 \renewcommand{\lstlistingname}{Código}                  % Nome para os códigos no texto
 \renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}
-%\makeatletter                                          % %Configura a linha da lista de códigos
-%\renewcommand\l@lstlisting[2]{{\normalfont\@dottedtocline{1}{1.5em}{2em}{Código~#1}{#2}}}
-%\makeatother
+
 % Redefinir formato da lista
 \makeatletter
 \renewcommand{\l@lstlisting}[2]{%
@@ -119,54 +117,54 @@
 % Redefine a macro para imprimir a capa
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\imprimircapa}{%
-\begin{capa}%
-\center
-\imprimirinstituicao
-\par
-\vspace*{1cm}
-\MakeUppercase{\imprimirautor}
-\vfill
-\begin{center}
-\imprimirtitulo
-\end{center}
-\vfill
-\imprimirlocal
-\par
-\imprimirdata
-\vspace*{1cm}
-\end{capa}
+  \begin{capa}%
+    \center
+    \imprimirinstituicao
+    \par
+    \vspace*{1cm}
+    \MakeUppercase{\imprimirautor}
+    \vfill
+    \begin{center}
+      \imprimirtitulo
+    \end{center}
+    \vfill
+    \imprimirlocal
+    \par
+    \imprimirdata
+    \vspace*{1cm}
+  \end{capa}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Redefine a macro para imprimir a folho de rosto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\imprimirfolhaderosto}{%
-\begin{capa}%
-\center
-\par
-\vspace*{1cm}
-\MakeUppercase{\imprimirautor}
-\vfill
-\begin{center}
-\imprimirtitulo
-\end{center}
-\vfill
-\hspace*{\fill}\parbox[b]{.5\textwidth}{%
-        \linespread{1}\selectfont
-\imprimirpreambulo
-}
-\vfill
-\flushright
-Orientador: \imprimirorientador\\
+  \begin{capa}%
+    \center
+    \par
+    \vspace*{1cm}
+    \MakeUppercase{\imprimirautor}
+    \vfill
+    \begin{center}
+      \imprimirtitulo
+    \end{center}
+    \vfill
+    \hspace*{\fill}\parbox[b]{.5\textwidth}{%
+      \linespread{1}\selectfont
+      \imprimirpreambulo
+    }
+    \vfill
+    \flushright
+    Orientador: \imprimirorientador\\
 
-Co-orientador: \imprimircoorientador\\
-\vfill
-\begin{center}
-\large\imprimirlocal
-\par
-\large\imprimirdata
-\vspace*{1cm}
-\end{center}
-\end{capa}
+    Co-orientador: \imprimircoorientador\\
+    \vfill
+    \begin{center}
+      \large\imprimirlocal
+      \par
+      \large\imprimirdata
+      \vspace*{1cm}
+    \end{center}
+  \end{capa}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Informações do PDF inseridas automaticamente
@@ -175,15 +173,15 @@ Co-orientador: \imprimircoorientador\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
 \hypersetup{
-pdftitle={\@title},
-pdfauthor={\@author},
-pdfsubject={\imprimirpreambulo},
-pdfkeywords={MONOGRAFIA}{CIÊNCIA DA COMPUTAÇÃO}{DCC-UFRJ},
-pdfcreator={LaTeX with abnTeX2},
-colorlinks=true,
-linkcolor=black,
-citecolor=black,
-urlcolor=black
+  pdftitle={\@title},
+  pdfauthor={\@author},
+  pdfsubject={\imprimirpreambulo},
+  pdfkeywords={MONOGRAFIA}{CIÊNCIA DA COMPUTAÇÃO}{DCC-UFRJ},
+  pdfcreator={LaTeX with abnTeX2},
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
 }
 \makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -208,44 +206,36 @@ urlcolor=black
 %---
 \lstset{numberbychapter=false,framexleftmargin=5mm,  frame=shadowbox, rulesepcolor=\color{gray}}
 %%
-\makeatother
-%
-%
-\makeatletter
 % Redefine o ambiente 'siglas' para alinhar como o índice remissivo
 \renewenvironment{siglas}{%
   \pretextualchapter{Lista de Siglas}% título e formatação padrão do abntex2
-    \begin{list}{}{%
-        \setlength{\labelwidth}{2.5cm}% largura da coluna das siglas
-        \setlength{\leftmargin}{\labelwidth + 0cm}% margem esquerda + espaçamento
-        \setlength{\labelsep}{0cm}% espaço entre sigla e texto
-        \setlength{\itemsep}{0pt}% espaçamento entre itens
-        \setlength{\parsep}{0pt}%
-        \renewcommand{\makelabel}[1]{##1 \hfill}%
-    }%
+  \begin{list}{}{%
+    \setlength{\labelwidth}{2.5cm}% largura da coluna das siglas
+    \setlength{\leftmargin}{\labelwidth + 0cm}% margem esquerda + espaçamento
+    \setlength{\labelsep}{0cm}% espaço entre sigla e texto
+    \setlength{\itemsep}{0pt}% espaçamento entre itens
+    \setlength{\parsep}{0pt}%
+    \renewcommand{\makelabel}[1]{##1 \hfill}%
+  }%
 }{%
-    \end{list}%
+  \end{list}%
 }
-\makeatother
 
-\makeatletter
 % Redefine o ambiente 'siglas' para alinhar como o índice remissivo
 \renewenvironment{simbolos}{%
   \pretextualchapter{Lista de Símbolos}% título e formatação padrão do abntex2
-    \begin{list}{}{%
-        \setlength{\labelwidth}{2.5cm}% largura da coluna das siglas
-        \setlength{\leftmargin}{\labelwidth + 0cm}% margem esquerda + espaçamento
-        \setlength{\labelsep}{0cm}% espaço entre sigla e texto
-        \setlength{\itemsep}{0pt}% espaçamento entre itens
-        \setlength{\parsep}{0pt}%
-        \renewcommand{\makelabel}[1]{##1 \hfill}%
-    }%
+  \begin{list}{}{%
+    \setlength{\labelwidth}{2.5cm}% largura da coluna das siglas
+    \setlength{\leftmargin}{\labelwidth + 0cm}% margem esquerda + espaçamento
+    \setlength{\labelsep}{0cm}% espaço entre sigla e texto
+    \setlength{\itemsep}{0pt}% espaçamento entre itens
+    \setlength{\parsep}{0pt}%
+    \renewcommand{\makelabel}[1]{##1 \hfill}%
+  }%
 }{%
-    \end{list}%
-    \cleardoublepage % força nova página, respeitando estilos de capítulos
+  \end{list}%
+  \cleardoublepage % força nova página, respeitando estilos de capítulos
 }
-\makeatother
-
 
 %---
 % A leitura da formatação das linguagens é feita aqui.
