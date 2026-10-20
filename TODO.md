@@ -7,7 +7,8 @@
 - [ ] Rename "LISTA DE SIGLAS" to "LISTA DE ABREVIATURAS E SIGLAS"
 - [ ] Fix empty Glossary page
 - [ ] Fix warnings
-  - [ ] (babel.sty: Name 'brazil' is deprecated). (options 'english' and 'brazil' passed to the documentclass are forwarded to babel. Maybe try passing 'brazilian')
+  - [ ] (babel.sty: Name 'brazil' is deprecated)
+    - John: I have tried adding \PassOptionsToPackage{english,main=brazilian}{babel} before the document class and removing 'english' and 'brazil' from the options passed to abntex2, and the warning from babel still keeps appearing, which means that abntex is necessarily calling babel with this argument and there's nothing we can do.
   - [ ] (datatool-base.sty: No 'datatool' support for dialect 'english')
   - [ ] (datatool-base.sty: No 'datatool' support for dialect 'brazil')
   - [ ] (abntex2.cls: `settocpreprocessor` is marked deprecated): this seems to be an issue with the class abntex that abntex is yet to fix. This is not our responsibility. The open issue can be found [here](https://github.com/abntex/abntex2/issues/274).
