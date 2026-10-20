@@ -1,10 +1,10 @@
 
 ## TODO list
 
-- [ ] Change from `\bfseries` to `\textbf`
+- [ ] Change from `\bfseries` to `\textbf` in [`epigrafe.tex`](src/elementos-pretextuais/epigrafe.tex) and [`capitulo-3.tex`](src/elementos-textuais/capitulo-3.tex).
 - [ ] Insert lines between section delimiters in [`formatacao.tex`](src/formatacao.tex)
-- [ ] Rename "LISTA DE SIGLAS" to "LISTA DE ABREVIATURAS E SIGLAS"
 - [ ] Update comments in all `.tex` files (and fix wrong ones)
+- [ ] Rename "LISTA DE SIGLAS" to "LISTA DE ABREVIATURAS E SIGLAS"
 - [ ] Fix empty Glossary page
 - [ ] Fix warnings
   - [ ] (babel.sty: Name 'brazil' is deprecated).
