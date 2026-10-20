@@ -5,6 +5,7 @@ Modifications applied to the TCC template available at the [UFRJ Institute of Co
 - Remove unused `.tex` files
 - Remove unused images
 - Remove redundant font commands
+- Remove wrong instruction for printing standards
 - Fix package name mismatch in [`url6023.sty`](src/url6023.sty) file
 - Fix incorrect quotation marks.
 - Remove some lines of code that do nothing
