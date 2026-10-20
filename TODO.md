@@ -7,8 +7,8 @@
 - [ ] Rename "LISTA DE SIGLAS" to "LISTA DE ABREVIATURAS E SIGLAS"
 - [ ] Fix empty Glossary page
 - [ ] Fix warnings
-  - [ ] (babel.sty: Name 'brazil' is deprecated).
+  - [ ] (babel.sty: Name 'brazil' is deprecated). (options 'english' and 'brazil' passed to the documentclass are forwarded to babel. Maybe try passing 'brazilian')
   - [ ] (datatool-base.sty: No 'datatool' support for dialect 'english')
   - [ ] (datatool-base.sty: No 'datatool' support for dialect 'brazil')
-  - [ ] (abntex2.cls: `settocpreprocessor` is marked deprecated): this seems to be an issue with the class abntex that abntex is yet to fix. This is not our responsability. The open issue can be found [here](https://github.com/abntex/abntex2/issues/274).
+  - [ ] (abntex2.cls: `settocpreprocessor` is marked deprecated): this seems to be an issue with the class abntex that abntex is yet to fix. This is not our responsibility. The open issue can be found [here](https://github.com/abntex/abntex2/issues/274).
 
