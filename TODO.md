@@ -1,15 +1,24 @@
 
-## TODO list
+# TODO list
+
+## Stuff We Can Fix
 
 - [ ] Change from `\bfseries` to `\textbf` in [`epigrafe.tex`](src/elementos-pretextuais/epigrafe.tex) and [`capitulo-3.tex`](src/elementos-textuais/capitulo-3.tex).
 - [ ] Insert lines between section delimiters in [`formatacao.tex`](src/formatacao.tex)
 - [ ] Update comments in all `.tex` files (and fix wrong ones)
 - [ ] Rename "LISTA DE SIGLAS" to "LISTA DE ABREVIATURAS E SIGLAS"
-- [ ] Fix empty Glossary page
-- [ ] Fix warnings
-  - [ ] (babel.sty: Name 'brazil' is deprecated)
-    - John: I have tried adding \PassOptionsToPackage{english,main=brazilian}{babel} before the document class and removing 'english' and 'brazil' from the options passed to abntex2, and the warning from babel still keeps appearing, which means that abntex is necessarily calling babel with this argument and there's nothing we can do.
-  - [ ] (datatool-base.sty: No 'datatool' support for dialect 'english')
-  - [ ] (datatool-base.sty: No 'datatool' support for dialect 'brazil')
-  - [ ] (abntex2.cls: `settocpreprocessor` is marked deprecated): this seems to be an issue with the class abntex that abntex is yet to fix. This is not our responsibility. The open issue can be found [here](https://github.com/abntex/abntex2/issues/274).
 
+## Delegated Task to the Librarian
+
+- [ ] Fix empty Glossary page
+
+
+## LaTeX Warnings
+
+- [ ] (babel.sty: Name 'brazil' is deprecated)
+  - John: The source code of `abntex2.cls` calls `babel` with the option 'brazil', which in fact causes this warning. I tried substuting it directly in the `abntex2.cls` source code and the warning disappeared. I have oppened an issue so that the error (and the solution) is registered. It is available [here](https://github.com/abntex/abntex2/issues/278).
+- [ ] (datatool-base.sty: No 'datatool' support for dialect 'english')
+- [ ] (datatool-base.sty: No 'datatool' support for dialect 'brazilian')
+  - John: these are caused by abntex and aren't our responsability.
+- [ ] (abntex2.cls: `settocpreprocessor` is marked deprecated)
+  - John: this seems to be an issue with the class abntex that abntex is yet to fix. This is not our responsibility. The open issue can be found [here](https://github.com/abntex/abntex2/issues/274).
