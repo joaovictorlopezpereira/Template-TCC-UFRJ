@@ -5,7 +5,6 @@
 
 - [ ] Insert lines between section delimiters in [`formatacao.tex`](src/formatacao.tex)
 - [ ] Update comments in all `.tex` files (and fix wrong ones)
-- [ ] Rename "LISTA DE SIGLAS" to "LISTA DE ABREVIATURAS E SIGLAS"
 
 ## Delegated Task to the Librarian
 
