@@ -14,5 +14,6 @@ Modifications applied to the TCC template available at the [UFRJ Institute of Co
 - Fix positioning of the dedication
 - Fix margin overflow caused by citation macro
 - Fix margin overflow in Appendix B TOC entry
-- Update margins to ABNT printing standards
+- Fix margins to ABNT printing standards
 - Substitute deprecated brazil language for brazilian language
+- Substitute from `\bfseries` to `\textbf` in [`epigrafe.tex`](src/elementos-pretextuais/epigrafe.tex).

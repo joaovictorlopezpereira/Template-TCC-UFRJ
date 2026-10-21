@@ -3,7 +3,6 @@
 
 ## Stuff We Can Fix
 
-- [ ] Change from `\bfseries` to `\textbf` in [`epigrafe.tex`](src/elementos-pretextuais/epigrafe.tex) and [`capitulo-3.tex`](src/elementos-textuais/capitulo-3.tex).
 - [ ] Insert lines between section delimiters in [`formatacao.tex`](src/formatacao.tex)
 - [ ] Update comments in all `.tex` files (and fix wrong ones)
 - [ ] Rename "LISTA DE SIGLAS" to "LISTA DE ABREVIATURAS E SIGLAS"
