@@ -80,16 +80,6 @@
 \ProcessOptions\relax
 \LoadClass{memoir}
 
-% sumario=abnt-6027-2012 : Sumário conforme recomendação da ABNT NBR 6027:2012, que
-%    soh pode ser usado com memoir v3.6k ou superior
-%    \settocpreprocessor \changes{v3.6k}{2012/09/18}{Added}
-\ifdefined\settocpreprocessor
-\else
-  \setboolean{ABNTEXsumario-tradicional}{true}
-  \setboolean{ABNTEXsumario-abnt-6027-2012}{false}
-\fi
-
-
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 % Comandos para tratamento de opcoes proprias
@@ -465,23 +455,6 @@
 \ifthenelse{\boolean{ABNTEXsumario-tradicional}}{}{} % essa linha não faz nada,
                                                      % mas se houver necessidade de alterar o comportamento
                                                      % do sumário tradicional altere aqui.
-
-% No caso de Sumario (TOC) especifico da ABNT-6027-2012
-
-\makeatletter
-\ifthenelse{\boolean{ABNTEXsumario-abnt-6027-2012}}{
-  \settocpreprocessor{chapter}{%
-  \let\tempf@rtoc\f@rtoc%
-  \def\f@rtoc{%
-  \texorpdfstring{\MakeTextUppercase{\tempf@rtoc}}{\tempf@rtoc}}%
-  }
-  \settocpreprocessor{part}{%
-  \let\tempf@rtoc\f@rtoc%
-  \def\f@rtoc{%
-  \texorpdfstring{\MakeTextUppercase{\tempf@rtoc}}{\tempf@rtoc}}%
-  }
-}{}
-\makeatother
 %
 \ifthenelse{\boolean{ABNTEXsumario-abnt-6027-2012}}{%
 
@@ -515,12 +488,12 @@
   %
   % Fontes das entradas do sumario
   %
-  \renewcommand{\cftpartfont}{\bfseries\large}
+  \renewcommand{\cftpartfont}{\bfseries\large\MakeTextUppercase}
   %
-  \renewcommand{\cftchapterfont}{\bfseries}
+  \renewcommand{\cftchapterfont}{\bfseries\MakeTextUppercase}
   \renewcommand{\cftchapterpagefont}{\normalsize\cftchapterfont}
   %
-  \renewcommand{\cftsectionfont}{\bfseries}
+  \renewcommand{\cftsectionfont}{\bfseries\MakeTextUppercase}
   \renewcommand{\cftsectionpagefont}{\cftsectionfont}
   %
   \renewcommand{\cftsubsectionfont}{\normalsize}
