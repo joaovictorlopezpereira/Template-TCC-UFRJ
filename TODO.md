@@ -5,9 +5,10 @@
 
 - [ ] Update comments in all `.tex` files (and fix wrong ones)
 
+
 ## Delegated Task to the Librarian
 
-- [ ] Fix empty Glossary page
+- [ ] Check if the Glossary formatting is correct
 
 
 ## LaTeX Warnings
