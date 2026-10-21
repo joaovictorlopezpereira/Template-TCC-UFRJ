@@ -5,6 +5,7 @@ Modifications applied to the TCC template available at the [UFRJ Institute of Co
 - Remove empty spaces
 - Remove unused `.tex` files
 - Remove unused images
+- Remove unused entries in glossary.tex
 - Remove redundant font commands
 - Remove some lines of code that do nothing
 - Remove wrong instruction for printing standards
@@ -19,5 +20,6 @@ Modifications applied to the TCC template available at the [UFRJ Institute of Co
 - Fix margins to ABNT printing standards
 - Fix "lista de siglas" name to ABNT standards
 - Fix inconsistencies in comments of [`formatacao.tex`](src/formatacao.tex)
+- Fix ordering of abbreviations and acronyms
 - Substitute deprecated brazil language for brazilian language
 - Substitute from `\bfseries` to `\textbf` in [`epigrafe.tex`](src/elementos-pretextuais/epigrafe.tex)
