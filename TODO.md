@@ -3,7 +3,7 @@
 
 ## Stuff We Can Fix
 
-- [ ] Update comments in [`formatacao.tex`](src/formatacao.tex)
+- [ ] Make a copy of babel to fix the LaTeX warnings
 
 
 ## Delegated Task to the Librarian

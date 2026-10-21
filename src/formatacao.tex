@@ -1,8 +1,5 @@
 
-% ---
-% Arquivo com a formatação do TCC.
-% Este arquivo não deve ser modificado.
-% ---
+% Arquivo com a formatação do TCC. Este arquivo não deve ser modificado.
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
@@ -10,22 +7,23 @@
 \usepackage{color}
 \usepackage{array}
 \usepackage{supertabular}
-\usepackage{listings}         % Para as linguagens de programação
-\usepackage{lastpage}		      % Usado pela Ficha catalográfica
-\usepackage{indentfirst}	    % Indenta o primeiro parágrafo de cada seção.
+\usepackage{listings}    % Para as linguagens de programação
+\usepackage{lastpage}		 % Usado pela Ficha catalográfica
+\usepackage{indentfirst} % Indenta o primeiro parágrafo de cada seção.
 \usepackage{hhline}
 \usepackage{hyperref}
 \usepackage[pdftex]{graphicx}
 \graphicspath{ {./figuras/} }
 
-\newcolumntype{Y}{>{\centering\arraybackslash}X}   % colunas centralizadas
-\newcolumntype{L}{>{\raggedright\arraybackslash}X} % coluna 'L' que é um 'X' alinhado à esquerda
+\newcolumntype{Y}{>{\centering\arraybackslash}X}   % Colunas centralizadas
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} % Coluna 'L' que é um 'X' alinhado à esquerda
 
-% retira as mensagens de aviso do pacote Glossaries
+% Retira as mensagens de aviso do pacote Glossaries
 \let\printglossary\relax
 \let\theglossary\relax
 \let\endtheglossary\relax
-% coloca Seções em maiúsculas sem negrito no Sumário
+
+% Coloca Seções em maiúsculas sem negrito no Sumário
 \makeatletter
 \let\oldcontentsline\contentsline
 \def\contentsline#1#2{%
@@ -41,31 +39,22 @@
   }%
 }
 \makeatother
-% ---
-% Pacotes glossaries
-% ---
+
+% Pacote glossaries
 \usepackage[subentrycounter,seeautonumberlist,nonumberlist=true]{glossaries}
-% para usar o xindy ao invés do makeindex:
-%\usepackage[xindy={language=portuguese},subentrycounter,seeautonumberlist,nonumberlist=true]{glossaries}
-% ---
+
 % Citações de referências no formato alfabético e negrito
 \usepackage[alf, abnt-emphasize=bf]{abntex2cite}
 
 % Margens definidas como 3cm acima e à esquerda, e 2cm abaixo e à direita
 \usepackage[left=30mm, top=30mm, right=20mm, bottom=20mm]{geometry}
 
-%---
-% O arquivo com o nome dos alunos e dos orientadores é lido aqui.
-% Atualizar diretamente no arquivo
-%---
+% Definições das macros utilizadas no TCC
 \input{elementos-pretextuais/personalizar}
 
 \setlength{\cftbeforechapterskip}{0pt}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Corrige a fonte dos capítulos, seções, resumos, etc.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Para corrigir algumas fontes e estilos
 \renewcommand{\ABNTEXchapterfont}{\bfseries \rmfamily}  % Capítulos em Bold e Maiúsculas
 \renewcommand{\ABNTEXchapterfontsize}{\normalsize}
 \renewcommand{\ABNTEXsectionfont}{\rmfamily}            % Seções em  Maiúsculas apenas
@@ -75,7 +64,7 @@
 \renewcommand{\lstlistingname}{Código}                  % Nome para os códigos no texto
 \renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}
 
-% Redefinir formato da lista
+% Redefine formato da lista
 \makeatletter
 \renewcommand{\l@lstlisting}[2]{%
   \begingroup
@@ -86,42 +75,26 @@
   \endgroup
 }
 \makeatother
-\usepackage{url6023} % para retirar < e > da URL nas referências.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Criação de quadros com numeração
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Para retirar < e > da URL nas referências.
+\usepackage{url6023}
 
+% Cria quadros com numeração
 \newcommand{\quadroname}{Quadro}
 \newcommand{\listofquadrosname}{Lista de quadros}
-
 \newfloat[chapter]{quadro}{loq}{\quadroname}
 \newlistof{listofquadros}{loq}{\listofquadrosname}
 \newlistentry{quadro}{loq}{0}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Configurações para atender às regras da ABNT
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \setfloatadjustment{quadro}{\centering}
 \counterwithout{quadro}{chapter}
 \renewcommand{\cftquadroname}{\quadroname\space}
 \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
-%---
-% Configuração de posicionamento padrão
-%---
 \setfloatlocations{quadro}{hbtp}
-%---
-% Para ajudar nas tabelas e quadros
-%---
 \makeatletter
 \newcommand\arraybslash{\let\\\@arraycr}
 \makeatother
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Redefine a macro para imprimir a capa
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
@@ -141,10 +114,7 @@
   \end{capa}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Redefine a macro para imprimir a folho de rosto
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \renewcommand{\imprimirfolhaderosto}{%
   \begin{capa}%
     \center
@@ -175,12 +145,9 @@
   \end{capa}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Informações do PDF inseridas automaticamente
 % Atualizar apenas as palavras-chave se necessário
 % Não modificar as cores dos links e referências
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \makeatletter
 \hypersetup{
   pdftitle    = {\@title},
@@ -195,10 +162,7 @@
 }
 \makeatother
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Definição das Linguagens de Programação
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Definição de cores para linguagens de programação
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{purple}{rgb}{0.8,0,0.3}
@@ -207,51 +171,44 @@
 \definecolor{lightgray}{rgb}{.9,.9,.9}
 \definecolor{lightgray2}{rgb}{.85,.85,.85}
 \definecolor{darkgray}{rgb}{.4,.4,.4}
-%---
-% Comando para inserir a listagem de código, tem 4 parâmetros
-% Linguagem, Caption, Label, Nome do Arquivo
-%---
+
+% Comando para inserir a listagem de código, tem 4
+% parâmetros: Linguagem, Caption, Label, Nome do Arquivo
 \newcommand{\includecode}[4][C]{\mbox{\lstinputlisting[caption=#2, label=#3, escapechar=, style=custom#1]{#4}}}
 
-%---
 % Define características em comum e numeração sequencial
-%---
 \lstset{numberbychapter=false, framexleftmargin=5mm, frame=shadowbox, rulesepcolor=\color{gray}}
-%%
-% Redefine o ambiente 'siglas' para alinhar como o índice remissivo
-\renewenvironment{siglas}{%
-  \pretextualchapter{\listadesiglasname}% título e formatação padrão do abntex2
-  \begin{list}{}{%
-    \setlength{\labelwidth}{2.5cm}% largura da coluna das siglas
-    \setlength{\leftmargin}{\labelwidth + 0cm}% margem esquerda + espaçamento
-    \setlength{\labelsep}{0cm}% espaço entre sigla e texto
-    \setlength{\itemsep}{0pt}% espaçamento entre itens
-    \setlength{\parsep}{0pt}%
-    \renewcommand{\makelabel}[1]{##1 \hfill}%
-  }%
-}{%
-  \end{list}%
-}
 
 % Redefine o ambiente 'siglas' para alinhar como o índice remissivo
-\renewenvironment{simbolos}{%
-  \pretextualchapter{Lista de Símbolos}% título e formatação padrão do abntex2
-  \begin{list}{}{%
-    \setlength{\labelwidth}{2.5cm}% largura da coluna das siglas
-    \setlength{\leftmargin}{\labelwidth + 0cm}% margem esquerda + espaçamento
-    \setlength{\labelsep}{0cm}% espaço entre sigla e texto
-    \setlength{\itemsep}{0pt}% espaçamento entre itens
-    \setlength{\parsep}{0pt}%
+\renewenvironment{siglas}{
+  \pretextualchapter{\listadesiglasname} % Título e formatação padrão do abntex2
+  \begin{list}{}{
+    \setlength{\labelwidth}{2.5cm} % Largura da coluna das siglas
+    \setlength{\leftmargin}{\labelwidth + 0cm} % Margem esquerda + espaçamento
+    \setlength{\labelsep}{0cm} % Espaço entre sigla e texto
+    \setlength{\itemsep}{0pt} % Espaçamento entre itens
+    \setlength{\parsep}{0pt} %
     \renewcommand{\makelabel}[1]{##1 \hfill}%
-  }%
-}{%
-  \end{list}%
-  \cleardoublepage % força nova página, respeitando estilos de capítulos
+  }
+}{
+  \end{list}
 }
 
-%---
+% Redefine o ambiente 'simbolos' para alinhar como o índice remissivo
+\renewenvironment{simbolos}{
+  \pretextualchapter{\listadesimbolosname} % Título e formatação padrão do abntex2
+  \begin{list}{}{
+    \setlength{\labelwidth}{2.5cm} % Largura da coluna das siglas
+    \setlength{\leftmargin}{\labelwidth + 0cm} % Margem esquerda + espaçamento
+    \setlength{\labelsep}{0cm} % Espaço entre sigla e texto
+    \setlength{\itemsep}{0pt} % Espaçamento entre itens
+    \setlength{\parsep}{0pt}
+    \renewcommand{\makelabel}[1]{##1 \hfill}
+  }
+}{
+  \end{list}
+  \cleardoublepage % Força nova página, respeitando estilos de capítulos
+}
+
 % A leitura da formatação das linguagens é feita aqui.
-% Modifique diretamente no arquivo.
-%---
-
 \input{codigos/linguagens}
