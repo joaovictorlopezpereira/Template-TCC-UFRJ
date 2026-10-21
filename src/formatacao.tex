@@ -10,14 +10,14 @@
 \usepackage{array}
 \usepackage{supertabular}
 \usepackage{listings}         % Para as linguagens de programação
-\usepackage{lastpage}		  % Usado pela Ficha catalográfica
-\usepackage{indentfirst}	  % Indenta o primeiro parágrafo de cada seção.
+\usepackage{lastpage}		      % Usado pela Ficha catalográfica
+\usepackage{indentfirst}	    % Indenta o primeiro parágrafo de cada seção.
 \usepackage{hhline}
 \usepackage{hyperref}
 \usepackage[pdftex]{graphicx}
 \graphicspath{ {./figuras/} }
 
-\newcolumntype{Y}{>{\centering\arraybackslash}X}  % colunas centralizadas
+\newcolumntype{Y}{>{\centering\arraybackslash}X}   % colunas centralizadas
 \newcolumntype{L}{>{\raggedright\arraybackslash}X} % coluna 'L' que é um 'X' alinhado à esquerda
 
 % retira as mensagens de aviso do pacote Glossaries
@@ -64,6 +64,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Corrige a fonte dos capítulos, seções, resumos, etc.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \renewcommand{\ABNTEXchapterfont}{\bfseries \rmfamily}  % Capítulos em Bold e Maiúsculas
 \renewcommand{\ABNTEXchapterfontsize}{\normalsize}
 \renewcommand{\ABNTEXsectionfont}{\rmfamily}            % Seções em  Maiúsculas apenas
@@ -85,18 +86,22 @@
 }
 \makeatother
 \usepackage{url6023} % para retirar < e > da URL nas referências.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Criação de quadros com numeração
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \newcommand{\quadroname}{Quadro}
 \newcommand{\listofquadrosname}{Lista de quadros}
 
 \newfloat[chapter]{quadro}{loq}{\quadroname}
 \newlistof{listofquadros}{loq}{\listofquadrosname}
 \newlistentry{quadro}{loq}{0}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% configurações para atender às regras da ABNT
+% Configurações para atender às regras da ABNT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \setfloatadjustment{quadro}{\centering}
 \counterwithout{quadro}{chapter}
 \renewcommand{\cftquadroname}{\quadroname\space}
@@ -111,9 +116,11 @@
 \makeatletter
 \newcommand\arraybslash{\let\\\@arraycr}
 \makeatother
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Redefine a macro para imprimir a capa
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
@@ -132,9 +139,11 @@
     \vspace*{1cm}
   \end{capa}
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Redefine a macro para imprimir a folho de rosto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \renewcommand{\imprimirfolhaderosto}{%
   \begin{capa}%
     \center
@@ -164,11 +173,13 @@
     \end{center}
   \end{capa}
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Informações do PDF inseridas automaticamente
 % Atualizar apenas as palavras-chave se necessário
 % Não modificar as cores dos links e referências
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \makeatletter
 \hypersetup{
   pdftitle    = {\@title},
@@ -182,9 +193,11 @@
   urlcolor    = black
 }
 \makeatother
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Definição das Linguagens de Programação
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{purple}{rgb}{0.8,0,0.3}
@@ -200,7 +213,7 @@
 \newcommand{\includecode}[4][C]{\mbox{\lstinputlisting[caption=#2, label=#3, escapechar=, style=custom#1]{#4}}}
 
 %---
-%Define características em comum e numeração sequencial
+% Define características em comum e numeração sequencial
 %---
 \lstset{numberbychapter=false, framexleftmargin=5mm, frame=shadowbox, rulesepcolor=\color{gray}}
 %%
@@ -238,8 +251,10 @@
 %---
 % A leitura da formatação das linguagens é feita aqui.
 % Modifique diretamente no arquivo.
-%
+%---
+
 \input{codigos/linguagens}
+
 %---
 % FIM
 %---

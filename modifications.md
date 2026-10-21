@@ -1,3 +1,4 @@
+# Modifications
 
 Modifications applied to the TCC template available at the [UFRJ Institute of Computing Website](https://ic.ufrj.br/info/tcc-bcc/), accessed on October 16, 2026.
 
@@ -8,7 +9,7 @@ Modifications applied to the TCC template available at the [UFRJ Institute of Co
 - Remove some lines of code that do nothing
 - Remove wrong instruction for printing standards
 - Fix package name mismatch in [`url6023.sty`](src/url6023.sty) file
-- Fix incorrect quotation marks.
+- Fix incorrect quotation marks
 - Fix Overfull errors from unnecessary linebreaks
 - Fix indentation and spacing in all `.tex` files
 - Fix positioning of the dedication
@@ -17,4 +18,5 @@ Modifications applied to the TCC template available at the [UFRJ Institute of Co
 - Fix margins to ABNT printing standards
 - Fix "lista de siglas" name to ABNT standards
 - Substitute deprecated brazil language for brazilian language
-- Substitute from `\bfseries` to `\textbf` in [`epigrafe.tex`](src/elementos-pretextuais/epigrafe.tex).
+- Substitute from `\bfseries` to `\textbf` in [`epigrafe.tex`](src/elementos-pretextuais/epigrafe.tex)
+- Fix inconsistencies in comments of [`formatacao.tex`](src/formatacao.tex)

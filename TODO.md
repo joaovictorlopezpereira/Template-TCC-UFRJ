@@ -3,7 +3,6 @@
 
 ## Stuff We Can Fix
 
-- [ ] Insert lines between section delimiters in [`formatacao.tex`](src/formatacao.tex)
 - [ ] Update comments in all `.tex` files (and fix wrong ones)
 
 ## Delegated Task to the Librarian
