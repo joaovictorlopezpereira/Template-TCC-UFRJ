@@ -1123,3 +1123,9 @@
 }
 \makeatother
 % ---
+
+% Passa a opção "lang-warn=false" para o "datatool-base" chamado pelo Memoir
+% Evitando que os warnings "No `datatool' support for dialect `english'" e
+% No `datatool' support for dialect `brazilian', que não são responsabilidade
+% do abntex resolver, sejam escondidos
+\PassOptionsToPackage{lang-warn=false}{datatool-base}
