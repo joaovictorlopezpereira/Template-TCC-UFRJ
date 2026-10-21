@@ -1,2 +1,17 @@
+# Folders
 temp-files/
 temp/
+
+# Latex Temp Files
+*.aux
+*.glg
+*.glo
+*.gls
+*.ist
+*.lof
+*.log
+*.lol
+*.loq
+*.lot
+*.pdf
+*.toc
