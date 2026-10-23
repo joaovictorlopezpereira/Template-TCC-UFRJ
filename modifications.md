@@ -24,3 +24,4 @@ Modifications applied to the TCC template available at the [UFRJ Institute of Co
 - Fix warnings caused by unupdated packages
 - Substitute deprecated brazil language for brazilian language
 - Substitute from `\bfseries` to `\textbf` in [`epigrafe.tex`](src/elementos-pretextuais/epigrafe.tex)
+- Substitute unicode characters with LaTeX correspondents
