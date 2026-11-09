@@ -5,12 +5,12 @@ Modifications applied to the TCC template available at the [UFRJ Institute of Co
 - Remove empty spaces
 - Remove unused `.tex` files
 - Remove unused images
-- Remove unused entries in glossary.tex
+- Remove unused entries in [`glossario.tex`](src/elementos-postextuais/glossario.tex)
 - Remove redundant font commands
 - Remove some lines of code that do nothing
 - Remove wrong instruction for printing standards
 - Fix typos throughout the document
-- Fix package name mismatch in [`url6023.sty`](src/url6023.sty) file
+- Fix package name mismatch in [`url6023.sty`](src/url6023.sty)
 - Fix incorrect quotation marks
 - Fix Overfull errors from unnecessary linebreaks
 - Fix indentation and spacing in all `.tex` files
